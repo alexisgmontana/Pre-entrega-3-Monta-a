@@ -138,4 +138,5 @@ try {
   productsManager.addProduct(product5);
 } catch (error) {
   console.log(error);
-}*/
+}
+ */

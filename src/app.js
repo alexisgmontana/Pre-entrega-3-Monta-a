@@ -7,7 +7,7 @@ const port = 8080;
 
 app.get("/products", (req, res) => {
   try {
-    const limit = req.query.limit;
+    const limit = parseInt(req.query.limit);
     const totalProducts = productManager.getProducts();
     if (limit) {
       const partialProducts = totalProducts.slice(0, limit);
